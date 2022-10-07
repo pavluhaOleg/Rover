@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 30;
+  box-shadow: 1px -10px 20px 0px #000;
+}
+
+.blockLeft {
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
