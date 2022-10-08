@@ -1,6 +1,6 @@
 import React, { useState, FC, useContext } from 'react'
 import { CSSTransition } from 'react-transition-group'
-import CarNavFixedBlok from './CarNavFixedBlok/CarNavFixedBlok'
+import CarNavBlok from './CarNavBlok/CarNavBlok'
 import c from './Cars.module.css'
 import { Context } from '../../context/Context'
 
@@ -10,11 +10,11 @@ const Cars = () => {
 
   return (
 
-    <div className={c.wrapper}>
-      <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}`
+    <div className={c.wrapper}>                                         
+      <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}` // динамическая страница
         :
         `${c.wrappAnimateBlock} ${c.none}`}>
-        <CarNavFixedBlok setCarsShow={setCarsShow} />
+        <CarNavBlok setCarsShow={setCarsShow} />   // навигация
       </div>
     </div>
   )
