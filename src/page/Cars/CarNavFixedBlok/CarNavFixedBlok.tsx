@@ -1,5 +1,6 @@
 import React, { useState, FC } from 'react'
 import { BsXLg } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 import cfb from './CarNavFixedBlok.module.css'
 import ItemCarFixed from './ItemCarFixed/ItemCarFixed'
 
@@ -10,10 +11,9 @@ interface ICarsNav {
 
 interface ICarsProps {
   setCarsShow: any;
-  carsShow: boolean;
 }
 
-const CarNavFixedBlok: FC<ICarsProps> = ({ setCarsShow, carsShow }) => {
+const CarNavFixedBlok: FC<ICarsProps> = ({ setCarsShow}) => {
   const [elemAllBlock, setElemAllBlock] = useState(true)
 
   const [elemCars, setElemCars] = useState<ICarsNav[]>([
@@ -21,8 +21,8 @@ const CarNavFixedBlok: FC<ICarsProps> = ({ setCarsShow, carsShow }) => {
     { id: 1, link: 'sv' },
   ])
 
-  const toogleBlockCars = () => {
-    setCarsShow(!carsShow);
+  const hideNavigationCars = () => {
+    setCarsShow(false);
     setElemAllBlock(!elemAllBlock);
   }
 
@@ -34,9 +34,11 @@ const CarNavFixedBlok: FC<ICarsProps> = ({ setCarsShow, carsShow }) => {
         )
         }
       </div>
-      <div
-        onClick={toogleBlockCars}
-        className={cfb.cnpHide}><BsXLg /></div>
+      <Link to="/">
+        <div
+          onClick={hideNavigationCars}
+          className={cfb.cnpHide}><BsXLg /></div>
+      </Link>
     </div>
   )
 }

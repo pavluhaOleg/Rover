@@ -1,23 +1,20 @@
-import React, { useState, FC } from 'react'
+import React, { useState, FC, useContext } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import CarNavFixedBlok from './CarNavFixedBlok/CarNavFixedBlok'
 import c from './Cars.module.css'
+import { Context } from '../../context/Context'
 
-interface ICars {
-  carsShow: boolean;
-  setCarsShow: any;
-}
 
-const Cars: FC<ICars> = ({ carsShow, setCarsShow }) => {
-  const [wrapper, setWrapper] = useState(true)
+const Cars = () => {
+  const { carsShow, setCarsShow } = useContext(Context)
 
   return (
 
     <div className={c.wrapper}>
       <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}`
         :
-        `${c.wrappAnimateBlock}${c.none}`}>
-        <CarNavFixedBlok setCarsShow={setCarsShow} carsShow={carsShow} />
+        `${c.wrappAnimateBlock} ${c.none}`}>
+        <CarNavFixedBlok setCarsShow={setCarsShow} />
       </div>
     </div>
   )

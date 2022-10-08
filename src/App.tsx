@@ -11,24 +11,26 @@ import { Route, Routes } from 'react-router-dom'
 import Cars from './page/Cars/Cars'
 import Owners from './page/Owners/Owners'
 import Brand from './page/Brand/Brand'
+import { Context } from './context/Context'
 
 const App = () => {
   const [carsShow, setCarsShow] = useState(false)
-  
+
   return (
+    <Context.Provider value={{ carsShow, setCarsShow}}>
+      <div className={app.wrapper}>
 
-    <div className={app.wrapper}>
-
-      <Header carsShow={carsShow} setCarsShow={setCarsShow} />
-      <Routes>
-        <Route path='/' element={<Home  />} />
-        <Route path='/cars' element={<Cars setCarsShow={setCarsShow} carsShow={carsShow } />} />
-        <Route path='/owners' element={<Owners />} />
-        <Route path='/brand' element={<Brand />} />
-      </Routes>
-      <Footer />
-      <FooterBottom />
-    </div>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cars' element={<Cars />} />
+          <Route path='/owners' element={<Owners />} />
+          <Route path='/brand' element={<Brand />} />
+        </Routes>
+        <Footer />
+        <FooterBottom />
+      </div>
+    </Context.Provider>
   )
 }
 

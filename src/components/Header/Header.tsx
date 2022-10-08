@@ -4,17 +4,14 @@ import Logo from './Logo-header/Logo'
 import Navigation from './Nav-header/Navigation'
 import Search from './search-nav/Search'
 
-interface IHeader{
-  setCarsShow: any;
-  carsShow: boolean;
-}
 
-const Header : FC<IHeader>= ({setCarsShow, carsShow}) => {
+
+const Header = () => {
   return (
     <div className={h.wrapper}>
       <div className={h.blockLeft}>
         <Logo />
-        <Navigation setCarsShow={setCarsShow} carsShow={carsShow }/>
+        <Navigation />
       </div>
 
       <Search />
