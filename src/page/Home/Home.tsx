@@ -10,6 +10,8 @@ import NavigationHomeHeader from '../../components/NavigationHomeHeader/Navigati
 
 
 const Home = () => {
+  window.scrollTo(0, 0);
+
   return (
 
     <div className={h.wrapper}>
@@ -19,7 +21,7 @@ const Home = () => {
       <LegendaryFamily />
       <Models />
       <FindDealer />
-      <Information/>
+      <Information />
       <NavigationHomeHeader />
     </div>
   )

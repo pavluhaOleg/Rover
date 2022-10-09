@@ -8,6 +8,8 @@ import { Context } from '../../context/Context'
 const Cars = () => {
   const { carsShow, setCarsShow } = useContext(Context)
 
+
+  window.scrollTo(0, 0);
   return (
 
     <div className={c.wrapper}>                                         
