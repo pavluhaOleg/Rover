@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group'
 import CarNavBlok from './CarNavBlok/CarNavBlok'
 import c from './Cars.module.css'
 import { Context } from '../../context/Context'
+import CarContentModel from '../../components/CarContentModel/CarContentModel'
 
 
 const Cars = () => {
@@ -16,8 +17,10 @@ const Cars = () => {
       <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}` // динамическая страница
         :
         `${c.wrappAnimateBlock} ${c.none}`}>
-        <CarNavBlok setCarsShow={setCarsShow} />   // навигация
+        <CarNavBlok setCarsShow={setCarsShow} />
+        <CarContentModel />
       </div>
+     
     </div>
   )
 }
