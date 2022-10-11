@@ -14,11 +14,11 @@ interface IItemS {
 
 const Slider_Item: FC<IItemS> = ({ img, title, text, marcerNum,id }) => {
 
-  return (
-    <div className={si.block_Img}>
+  return ( // Елемен(катринка) слайдера
+    <div className={si.block_Img}>  
       <img src={img} style={{ width: '98.9vw' }} alt="картинка" />
 
-      <BlockCnp title={title} text={text} id={id} marcerNum={marcerNum} />
+      <BlockCnp title={title} text={text} id={id} marcerNum={marcerNum} /> 
     </div>
   )
 }

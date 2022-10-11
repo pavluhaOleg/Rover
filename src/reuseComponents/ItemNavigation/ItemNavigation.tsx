@@ -7,7 +7,7 @@ interface ItemNavigationProps {
 }
 
 const ItemNavigation: FC<ItemNavigationProps> = ({ img, title }) => {
-  return (
+  return ( // Елеменn навигации Cars
     <li className={itn.wrapper}>
       <div className={itn.blockImg}>
         <img src={img} title="img" />

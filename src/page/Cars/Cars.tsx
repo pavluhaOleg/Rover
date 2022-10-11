@@ -14,10 +14,10 @@ const Cars = () => {
   return (
 
     <div className={c.wrapper}>                                         
-      <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}` // динамическая страница
+      <div className={carsShow ? `${c.wrappAnimateBlock} ${c.active}` // динамическая страница Cars
         :
         `${c.wrappAnimateBlock} ${c.none}`}>
-        <CarNavBlok setCarsShow={setCarsShow} />
+        <CarNavBlok setCarsShow={setCarsShow} />  
         <CarContentModel />
       </div>
      
