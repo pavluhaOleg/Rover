@@ -5,22 +5,21 @@
   cursor: pointer;
 }
 
-.wrapper:hover {
-  background-color: #f8f9f9;
-}
-
 .blockImg {
   width: 110px;
   height: 59px;
   display: block;
+  overflow: hidden;
 }
 
 .blockImg img {
   width: 110px;
   display: block;
+  background-position: center;
 }
 
 .title {
+  width: 206px;
   height: 59px;
   display: block;
   font-family: helvetica, sans-serif;
@@ -30,13 +29,14 @@
   color: #4a4f54;
   text-transform: uppercase;
   font-size: 12px;
-  padding: 0 19px 0 -1px;
-  padding: 17px;
   border-bottom: 1px solid #eceded;
   text-align: left;
   padding-top: 21px;
+  padding-left: 12px;
 }
-
-.p {
-  padding-bottom: 30px;
+.wrapper:hover {
+  background-color: #f8f9f9;
+}
+.wrapper:hover .title {
+  color: black;
 }

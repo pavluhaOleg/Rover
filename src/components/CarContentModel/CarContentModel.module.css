@@ -9,11 +9,31 @@
   background-color: #fff;
 }
 
-.navigation {
-  width: 325px;
-  height: 100vh;
+.cnp_comparison {
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: .8px;
+  display: flex;
+  align-items: center;
+  color: #0c121c;
+  font-family: helvetica, sans-serif;
+  border-bottom: 1px solid #e8eced;
+  padding: 14px 0 13px 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
 }
 
+.cnp_comparison span {
+  margin-right: 20px;
+  font-size: 21px;
+}
+
+.cnp_comparison:hover {
+  color: green;
+}
 
 .blockWindow {
   width: 55%;
@@ -39,6 +59,7 @@
   border-bottom: 1px solid #e8eced;
   padding: 14px 0 13px;
   font-size: 13px;
+  text-transform: uppercase;
 }
 
 @keyframes show-content {
