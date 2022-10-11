@@ -10,12 +10,14 @@
   height: 59px;
   display: block;
   overflow: hidden;
+  position: relative;
 }
 
 .blockImg img {
   width: 110px;
   display: block;
-  background-position: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .title {
@@ -34,9 +36,11 @@
   padding-top: 21px;
   padding-left: 12px;
 }
+
 .wrapper:hover {
   background-color: #f8f9f9;
 }
+
 .wrapper:hover .title {
   color: black;
 }
