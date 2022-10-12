@@ -36,9 +36,28 @@
 }
 
 .blockWindow {
-  width: 55%;
+  width: 100%;
   height: 100vh;
+  display: flex;
   border: 1px solid rgb(6, 36, 156);
+}
+
+.blockКeview {
+  min-width: 316px;
+  width: 30%;
+  height: 100vh;
+  outline: 1px solid red;
+}
+
+.blockImg {
+  width: 70%;
+  height: auto;
+}
+
+.blockImg img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .active {

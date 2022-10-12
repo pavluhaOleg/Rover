@@ -39,12 +39,12 @@ const CarContentModel = () => {
   return (
     <div className={cc.wrapper}>
       <div>
-          <h4 className={cc.title}>СЕМЕЙСТВО RANGE ROVER</h4>
-          <ul>
-            {familyRover.map(elem =>
-              <ItemNavigation key={elem.id} {...elem} />
-            )}
-          </ul>
+        <h4 className={cc.title}>СЕМЕЙСТВО RANGE ROVER</h4>
+        <ul>
+          {familyRover.map(elem =>
+            <ItemNavigation key={elem.id} {...elem} />
+          )}
+        </ul>
 
         <h4 className={cc.title}>СЕМЕЙСТВО DISCOVERY</h4>
         <ul>
@@ -60,17 +60,19 @@ const CarContentModel = () => {
           )}
         </ul>
         <div className={cc.cnp_comparison}>
-          <span><GrCatalog/></span><h4>сравнение</h4>
-          </div>
+          <span><GrCatalog /></span><h4>сравнение</h4>
+        </div>
       </div>
 
       {/* block Window */}
       <div className={cc.blockWindow}>
-
+      
+        {/* блок blockКeview */}
+        <div className={cc.blockКeview}></div>
 
         {/* блок фото */}
-        <div className={cc.blockImg}> 
-          <img src={""} />
+        <div className={cc.blockImg}>
+          <img src={rov_1} title="img" />
         </div>
       </div>
     </div>
