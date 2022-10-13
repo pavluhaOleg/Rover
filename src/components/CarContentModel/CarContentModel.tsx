@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import cc from './CarContentModel.module.css'
 import { GrCatalog } from "react-icons/gr";
+import { FaCarSide } from "react-icons/fa";
+import { BsChevronRight } from "react-icons/bs";
 
 import rov_1 from '../../img/nav-car-1.png'
 import rov_2 from '../../img/nav-car-2.png'
@@ -66,9 +68,24 @@ const CarContentModel = () => {
 
       {/* block Window */}
       <div className={cc.blockWindow}>
-      
+
         {/* блок blockКeview */}
-        <div className={cc.blockКeview}></div>
+        <div className={cc.blockКeview}>
+          <div className={cc.titleImg}>НОВЫЙ RANGE ROVER</div>
+          <p className={cc.textImg}>Непревзойденная роскошь и совершенство</p>
+
+          <span className={cc.configCnp}><FaCarSide /><span className={cc.text}>конфигуратор</span></span>
+
+          <p className={cc.linkKeviw}><span className={cc.iconArrow}><BsChevronRight /></span>ОБЗОР</p>
+          <p className={cc.linkKeviw}><span className={cc.iconArrow}><BsChevronRight /></span>ОСОБЕННОСТИ</p>
+          <p className={cc.linkKeviw}><span className={cc.iconArrow}><BsChevronRight /></span>КОМПЛЕКТАЦИИ</p>
+          <p className={cc.linkKeviw}><span className={cc.iconArrow}><BsChevronRight /></span>СКАЧАТЬ БРОШЮРУ</p>
+          <p className={cc.linkKeviw}><span className={cc.iconArrow}><BsChevronRight /></span>СЕМЕЙСТВО RANGE ROVER</p>
+
+          <div className={cc.border}></div>
+
+          <p className={`${cc.linkKeviw} ${cc.marginTop}`}><span className={cc.iconArrow}><BsChevronRight /></span>СЕМЕЙСТВО DEFENDER</p>
+        </div>
 
         {/* блок фото */}
         <div className={cc.blockImg}>
