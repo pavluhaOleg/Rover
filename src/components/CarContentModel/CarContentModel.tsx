@@ -88,9 +88,33 @@ const CarContentModel = () => {
         </div>
 
         {/* блок фото */}
-        <div className={cc.blockImg}>
-          <img src={rov_1} title="img" />
+        <div className={cc.wrapperImg}>
+          <div className={cc.blockImg}>
+            <img src={rov_1} title="img" />
+          </div>
+
+          <ul className={cc.blockInformationImg}>
+            <li className={cc.elemInformation}></li>
+            <li className={cc.elemInformation}></li>
+            <li className={cc.elemInformation}></li>
+            <li className={cc.elemInformation}></li>
+          </ul>
+          <div className={cc.footnoteImg}>
+            <p className={cc.textFootnote}>
+              1.Указанные данные получены по оценкам производителя и будут заменены на официальные результаты испытаний, как только таковые станут доступны. Фактические значения могут отличаться от приведенных. Значения выбросов CO2 и расхода топлива могут отличаться в зависимости от таких факторов, как стиль вождения, условия окружающей среды, нагрузка на автомобиль, колесные диски и дополнительное оборудование.
+            </p>
+
+            <p className={cc.textFootnote}>
+              2.Wet: Объем определен путем моделирования заполнения багажного отделения жидкостью. При выборе задних сидений повышенной комфортности объем багажного отделения уменьшается. Для получения дополнительной информации обратитесь в официальный дилерский центр.
+            </p>
+            
+            <p className={cc.textFootnote}>
+              Значения приведены для версии со стандартной колесной базой.
+            </p>
+          </div>
         </div>
+
+
       </div>
     </div>
   )
