@@ -5,9 +5,7 @@ import s from './Slider.module.css';
 import Slider_Item from './Slider-Item/Slider-Item'
 import { AllElements } from '../../context'
 
-import img_1 from "../../img/slider_home_1.png"
-import img_2 from "../../img/slider_home_2.png"
-import img_3 from "../../img/slider_home_3.png"
+import {sliderArr} from'../../Infa-arr/InfaArr';
 import ScrolDown from './ScrolDown/ScrolDown';
 import CnpFixedConfigurator from '../cnpFixedConfigurator/cnpFixedConfigurator';
 
@@ -23,12 +21,7 @@ interface ILineSlider {
 
 const Slider: FC = () => {
 
-  const [imgSlider, setImgSlider] = useState<ILineSlider[]>([               // массив Слайдер
-    { id: 1, img: img_1, title: 'Ноовый Renge Rover', text: 'непревзойдённая роскошь и совершенсво', anchor: 1 },
-    { id: 2, img: img_2, title: 'Lend Rover Defender', text: 'способен на многое. теперь доступен в вариации defender 130', anchor: 2 },
-    { id: 3, img: img_3, title: 'Lend Rover Defender', text: 'способен на многое. теперь доступен в вариации defender 130', anchor: 3 },
-
-  ]);
+  const [imgSlider, setImgSlider] = useState<ILineSlider[]>(sliderArr);  // arr Slider
 
   let [offset, setOffset] = useState(0);  // длинна слайдера
 

@@ -36,7 +36,12 @@
 }
 
 .wrapperImg {
-  width: 73%;
+  width: 100%;
+  height: auto;
+}
+
+.wrapperElemImg {
+  width: 100%;
   height: auto;
   box-shadow: inset 1px 5px 4px 0 rgb(1 1 1 / 10%);
 }
@@ -58,12 +63,10 @@
   height: 124px;
   display: flex;
   border-bottom: 1px solid #ebebeb;
-  outline: 1px solid green;
 }
 
 .elemInformation {
   width: 25%;
-  outline: 1px solid rgb(41, 0, 128);
 }
 
 .active {
@@ -80,7 +83,8 @@
   letter-spacing: .8px;
   color: #0c121c;
   font-family: lr_ot4, arial, helvetica, sans-serif;
-  background: #f8f9f9;
+  background-color: #e8e4e4;
+
   border-bottom: 1px solid #e8eced;
   padding: 14px 0 13px;
   font-size: 13px;
@@ -207,4 +211,16 @@
   letter-spacing: 0.3px;
   color: #4a4f54;
   margin-bottom: 12px;
+}
+
+/* инфа под фото */
+.elemInformation{
+  font-size: 11px;
+  font-family: Arial Unicode, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.3px;
+  color: #4a4f54;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -8,7 +8,7 @@
 }
 
 .slider_line {
-  max-width: 2000;
+  max-width: 20000;
   display: flex;
   position: absolute;
   list-style: none;
@@ -17,21 +17,6 @@
   top: 0;
   left: 0;
   transition: all 1s;
-}
-
-.block_Img {
-  width: 100vw;
-  max-width: 2000px;
-  height: auto;
-  display: block;
-  
-}
-
-.block_Img img {
-  width: 100%;
-  display: block;
-  height: auto;
-
 }
 
 /* стрелки */
