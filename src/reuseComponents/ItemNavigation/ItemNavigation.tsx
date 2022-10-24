@@ -3,12 +3,21 @@ import itn from './ItemNavigation.module.css'
 
 interface ItemNavigationProps {
   img: string,
-  title: string
+  title: string,
+  id: number,
+  onMouseOver: any
 }
 
-const ItemNavigation: FC<ItemNavigationProps> = ({ img, title }) => {
+const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title }) => {
+
+  const showWindow = (id: number) => {
+    console.log(id)
+  }
+
   return ( // Елеменn навигации Cars
-    <li className={itn.wrapper}>
+    <li className={itn.wrapper}
+      onMouseOver={() => showWindow(id)}
+    >
       <div className={itn.blockImg}>
         <img src={img} title="img" />
       </div>
@@ -18,3 +27,4 @@ const ItemNavigation: FC<ItemNavigationProps> = ({ img, title }) => {
 }
 
 export default ItemNavigation
+

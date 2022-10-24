@@ -25,21 +25,21 @@ const CarContentModel = () => {
         <h4 className={cc.title}>СЕМЕЙСТВО RANGE ROVER</h4>
         <ul>
           {familyRover.map(elem =>
-            <ItemNavigation key={elem.id} {...elem} />
+            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
           )}
         </ul>
 
         <h4 className={cc.title}>СЕМЕЙСТВО DISCOVERY</h4>
         <ul>
           {famiyDiscovery.map(elem =>
-            <ItemNavigation key={elem.id} {...elem} />
+            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
           )}
         </ul>
 
         <h4 className={cc.title}>СЕМЕЙСТВО DEFENDER</h4>
         <ul>
           {familyDefender.map(elem =>
-            <ItemNavigation key={elem.id} {...elem} />
+            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
           )}
         </ul>
         <div className={cc.cnp_comparison}>

@@ -1,6 +1,7 @@
 .blockImg {
   width: 100%;
   height: auto;
+
 }
 
 .blockImg img {
@@ -84,6 +85,10 @@
 .blockWindow {
   width: 100%;
   /* height: 100vh; */
+  display: flex;
+  /* display: none; */
+}
+.active{
   display: flex;
 }
 
