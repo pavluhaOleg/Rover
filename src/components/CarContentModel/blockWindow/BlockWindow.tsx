@@ -3,7 +3,7 @@ import { BsChevronRight } from 'react-icons/bs'
 import { FaCarSide } from 'react-icons/fa'
 import bw from './BlockWindow.module.css'
 
-import { BlockImg, RangeRover, Discovery, Defender } from '../../../Infa-arr/InfaArr'
+import { BlockImg } from '../../../Infa-arr/InfaArr'
 
 interface ICarBlockmg {
   id: number,
@@ -23,7 +23,7 @@ const BlockWindow = () => {
     <>
       {
         modelHover.map(elem =>
-          <div className={bw.blockWindow}>
+          <div key={elem.id} className={bw.blockWindow}>
 
             {/* блок blockКeview */}
 

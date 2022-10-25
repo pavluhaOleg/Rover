@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import cc from './CarContentModel.module.css'
-import { RangeRover, Discovery, Defender } from '../../Infa-arr/InfaArr'
+import { Nav_CarsContent } from '../../Infa-arr/InfaArr'
 
 import { GrCatalog } from "react-icons/gr";
 
@@ -15,42 +15,30 @@ interface ICarContentModel {
 }
 
 const CarContentModel = () => {
-  const [familyRover, setFamilyRover] = useState<ICarContentModel[]>(RangeRover)
-  const [famiyDiscovery, setFamilyDiscovery] = useState<ICarContentModel[]>(Discovery)
-  const [familyDefender, setFamilyDefender] = useState<ICarContentModel[]>(Defender)
+  const [navElem, setNavElement] = useState<ICarContentModel[]>(Nav_CarsContent)
+
+  const showWindow = (id: number) => {
+    console.log(id)
+  }
 
   return (
     <div className={cc.wrapper}>
       <div>
         <h4 className={cc.title}>СЕМЕЙСТВО RANGE ROVER</h4>
         <ul>
-          {familyRover.map(elem =>
-            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
+          {navElem.map(elem =>
+            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} showWindow={showWindow} />
           )}
         </ul>
 
-        <h4 className={cc.title}>СЕМЕЙСТВО DISCOVERY</h4>
-        <ul>
-          {famiyDiscovery.map(elem =>
-            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
-          )}
-        </ul>
-
-        <h4 className={cc.title}>СЕМЕЙСТВО DEFENDER</h4>
-        <ul>
-          {familyDefender.map(elem =>
-            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} />
-          )}
-        </ul>
         <div className={cc.cnp_comparison}>
           <span><GrCatalog /></span><h4>сравнение</h4>
         </div>
       </div>
-      
+
       <BlockWindow />
     </div>
 
-    // </div>
   )
 }
 

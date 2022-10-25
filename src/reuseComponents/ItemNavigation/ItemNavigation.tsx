@@ -1,18 +1,15 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import itn from './ItemNavigation.module.css'
 
 interface ItemNavigationProps {
   img: string,
   title: string,
   id: number,
-  onMouseOver: any
+  onMouseOver: any,
+  showWindow: any,
 }
 
-const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title }) => {
-
-  const showWindow = (id: number) => {
-    console.log(id)
-  }
+const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title, showWindow }) => {
 
   return ( // Елеменn навигации Cars
     <li className={itn.wrapper}

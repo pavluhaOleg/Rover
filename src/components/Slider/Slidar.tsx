@@ -72,7 +72,7 @@ const Slider: FC = () => {
       <ul className={s.marcerBlock}>
 
         {imgSlider.map(elem =>
-          <div className={s.wrappMarcer}>
+          <div key={elem.id} className={s.wrappMarcer}>
             <div
               className={marcerNum === elem.id        // выбор активного маркера
                 ?
