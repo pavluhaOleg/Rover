@@ -1,20 +1,17 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import itn from './ItemNavigation.module.css'
 
 interface ItemNavigationProps {
   img: string,
   title: string,
   id: number,
-  onMouseOver: any,
-  showWindow: any,
+  hoverBlock: any
 }
 
-const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title, showWindow }) => {
+const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title, hoverBlock }) => {
 
   return ( // Елеменn навигации Cars
-    <li className={itn.wrapper}
-      onMouseOver={() => showWindow(id)}
-    >
+    <li className={itn.wrapper} onMouseOver={() => hoverBlock(id)}>
       <div className={itn.blockImg}>
         <img src={img} title="img" />
       </div>
@@ -24,4 +21,3 @@ const ItemNavigation: FC<ItemNavigationProps> = ({ id, img, title, showWindow })
 }
 
 export default ItemNavigation
-

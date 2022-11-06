@@ -18,7 +18,7 @@ const CarNavFixedBlok: FC<ICarsProps> = ({ setCarsShow }) => {
 
   const [elemCars, setElemCars] = useState<ICarsNav[]>([     // массив навигация
     { id: 1, link: 'автомобили' },
-    { id: 1, link: 'sv' },
+    { id: 2, link: 'sv' },
   ])
 
   const hideNavigationCars = () => {    //Событие - спрятать навигацию, кнопка " X "

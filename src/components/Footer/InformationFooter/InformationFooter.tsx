@@ -9,7 +9,7 @@ const InformationFooter: FC = () => {
     <ul className={info.block}>
       <div className={info.title}>ИНФОРМАЦИЯ ДЛЯ ВЛАДЕЛЬЦЕВ</div>
       {arrInformation.map(ul_2 =>
-        <ItemFooterUl key={ul_2.length} elem={ul_2} />
+        <ItemFooterUl key={ul_2} elem={ul_2} />
       )}
     </ul>
   )

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import cc from './CarContentModel.module.css'
-import { Nav_CarsContent } from '../../Infa-arr/InfaArr'
+import {arrMenuCarContent } from '../../Infa-arr/InfaArr'
 
 import { GrCatalog } from "react-icons/gr";
 
@@ -15,9 +15,9 @@ interface ICarContentModel {
 }
 
 const CarContentModel = () => {
-  const [navElem, setNavElement] = useState<ICarContentModel[]>(Nav_CarsContent)
+  const [familyRover, setFamilyRover] = useState<ICarContentModel[]>(arrMenuCarContent)
 
-  const showWindow = (id: number) => {
+  const hoverBlock = (id: number) => {
     console.log(id)
   }
 
@@ -26,8 +26,8 @@ const CarContentModel = () => {
       <div>
         <h4 className={cc.title}>СЕМЕЙСТВО RANGE ROVER</h4>
         <ul>
-          {navElem.map(elem =>
-            <ItemNavigation onMouseOver={undefined} key={elem.id} {...elem} showWindow={showWindow} />
+          {familyRover.map(elem =>
+            <ItemNavigation key={elem.id} {...elem} hoverBlock={hoverBlock}/>
           )}
         </ul>
 
@@ -35,7 +35,7 @@ const CarContentModel = () => {
           <span><GrCatalog /></span><h4>сравнение</h4>
         </div>
       </div>
-
+      
       <BlockWindow />
     </div>
 

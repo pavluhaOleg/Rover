@@ -6,7 +6,7 @@ const Brand = () => {
   window.scrollTo(0, 0);
   return (
     <div className={br.wrapper}>
-      <h1>Brand</h1>
+      <h1>ТИМУР</h1>
     </div>
   )
 }

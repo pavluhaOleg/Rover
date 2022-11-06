@@ -10,7 +10,7 @@ export const BrandFooter = () => {
     <ul className={bf.block}>
       <div className={bf.title}>БРЕНД LAND ROVER</div>
       {arrBrand.map(ul_2 =>
-        <ItemFooterUl key={ul_2.length} elem={ul_2} />
+        <ItemFooterUl key={ul_2} elem={ul_2} />
       )}
     </ul>
   )

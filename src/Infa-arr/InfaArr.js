@@ -19,7 +19,7 @@ export const sliderArr = [               // массив Слайдер
 
 ];
 
-export const Nav_CarsContent = [
+export const arrMenuCarContent = [
   { id: 1, img: rov_1, title: "новый range rover" },
   { id: 2, img: rov_2, title: "новый range rover sport" },
   { id: 3, img: rov_3, title: "range rover velar" },
