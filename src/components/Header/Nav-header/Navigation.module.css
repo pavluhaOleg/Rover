@@ -1,5 +1,5 @@
 .block {
-  width: 330px;
+  width: 337px;
   display: flex;
   list-style: none;
 }
@@ -13,11 +13,13 @@
   padding: 30px 10px;
   letter-spacing: 2px;
   cursor: pointer;
+  border-right: 1px solid #fff;
 }
 
 .linkNav:hover {
   background-color: #e9ecec;
 }
+
 
 .button {
   outline: 0;
@@ -26,5 +28,5 @@
 }
 
 .active {
-  text-decoration: underline;
+  background-color: #e9ecec;
 }

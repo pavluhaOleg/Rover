@@ -20,13 +20,13 @@ export const sliderArr = [               // массив Слайдер
 ];
 
 export const arrMenuCarContent = [
-  { id: 1, img: rov_1, title: "новый range rover" },
-  { id: 2, img: rov_2, title: "новый range rover sport" },
-  { id: 3, img: rov_3, title: "range rover velar" },
-  { id: 4, img: rov_4, title: "range rover evoque" },
-  { id: 5, img: discov_1, title: "discovery" },
-  { id: 6, img: discov_2, title: "discovery sport" },
-  { id: 7, img: defender_1, title: "defender" },
+  { id: 1, img: rov_1, title: "новый range rover", status: true },
+  { id: 2, img: rov_2, title: "новый range rover sport", status: false },
+  { id: 3, img: rov_3, title: "range rover velar", status: false },
+  { id: 4, img: rov_4, title: "range rover evoque", status: false },
+  { id: 5, img: discov_1, title: "discovery", status: false },
+  { id: 6, img: discov_2, title: "discovery sport", status: false },
+  { id: 7, img: defender_1, title: "defender", status: false },
 ]
 
 export const BlockImg = [
